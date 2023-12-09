@@ -138,8 +138,8 @@ function krishnIdea() {
     document.querySelector(".response").textContent = "💐Correct answer";
     document.body.style.backgroundColor = "green";
     document.querySelector(".highscore").textContent = highscore;
-    document.querySelector(".question").textContent = secretNumber;
     if(score>highscore){
+    document.querySelector(".question").textContent = secretNumber;
       highscore = score;
     }
   } else {
