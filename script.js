@@ -137,11 +137,11 @@ function krishnIdea() {
   if (input == secretNumber) {
     document.querySelector(".response").textContent = "💐Correct answer";
     document.body.style.backgroundColor = "green";
-    document.querySelector(".highscore").textContent = highscore;
     if(score>highscore){
     document.querySelector(".question").textContent = secretNumber;
       highscore = score;
     }
+    document.querySelector(".highscore").textContent = highscore;    
   } else {
     if (input > secretNumber && input <= 20) {
       document.querySelector(".response").textContent = "📈 to High";
