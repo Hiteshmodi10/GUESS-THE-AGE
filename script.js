@@ -138,11 +138,8 @@ function krishnIdea() {
     document.querySelector(".response").textContent = "💐Correct answer";
     document.body.style.backgroundColor = "green";
     document.querySelector(".question").textContent = secretNumber;
-    if(score>highscore){
-      highscore = score;
-    }
-    document.querySelector(".highscore").textContent = highscore;
-    
+   
+   
   } else {
     if (input > secretNumber && input <= 20) {
       document.querySelector(".response").textContent = "📈 to High";
@@ -173,6 +170,11 @@ function closeModel() {
 }
 
 function reset() {
+  if(score>highscore){
+    highscore = score;
+  }
+  document.querySelector(".highscore").textContent = highscore;
+  score=20;
   document.body.style.background = "#222";
   document.querySelector(".score").textContent = 20;
   document.querySelector(".response").textContent = "Start guessing...";
